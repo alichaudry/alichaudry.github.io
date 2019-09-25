@@ -1,40 +1,46 @@
-Prologue by HTML5 UP
+Aerial by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 
-This is Prologue, a simple, single page responsive site template. It features a
-clean, minimalistic design and a sticky sidebar with navigation-linked scrolling.
+The Scrolling Background:
 
-Demo content images* are courtesy of the ridiculously talented Felicia Simion. Check out
-more of her amazing work over at deviantART:
+	This relies entirely on CSS to do its thing, which is cool, but that makes
+	changing it a bit weird/tricky at first. You can still use pretty much any image
+	you want, but for best results make sure yours is:
 
-http://ineedchemicalx.deviantart.com/
+	- Horizontally tileable.
+	- Wide and short.
+	- About 1500px wide.
+	- Fades to a solid color either at the top of bottom (which is used to fill
+	  the empty space above or below your image).
 
-(* = Not included! Only meant for use with my own on-site demo, so please do NOT download
-and/or use any of Felicia's work without her explicit permission!)
+	Now, there are two ways to use it: with CSS, or with Sass:
 
-Demo banner images* courtesy of Unsplash, a radtastic collection of CC0 (public domain)
-images you can use for pretty much whatever.
+	CSS:
 
-(* = Not included)
+		Look for this line in css/style.css (line 108 as of this writing):
 
-AJ
-aj@lkn.io | @ajlkn
+			background: #348cb2 url("images/bg.jpg") bottom left;
 
-PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
+		and use it to set the page background color, URL, and placement of
+		your image. It should be as close to 1500px wide as you can get it.
+
+	Sass:
+
+		Set the value of $bg to the page background color, URL, and placement
+		of your image. Change $bg-width if your image is something other than
+		1500px wide.
 
 
 Credits:
 
-	Demo Images:
-		Felicia Simion (ineedchemicalx.deviantart.com)
-		Unsplash (unsplash.com)
+	Background Image:
+		Colton Duke via Unsplash (unsplash.com - CC0 licensed)
+			"Bridge" (https://unsplash.com/photos/UExx0KnnkjY)
 
 	Icons:
 		Font Awesome (fontawesome.io)
 
-	Other
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
+	Other:
 		Responsive Tools (github.com/ajlkn/responsive-tools)
